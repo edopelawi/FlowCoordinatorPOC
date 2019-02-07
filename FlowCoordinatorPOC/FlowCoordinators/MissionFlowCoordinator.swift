@@ -39,6 +39,37 @@ final class MissionFlowCoordinator {
 
 		let detailViewModel = MissionDetailViewModel(mission: mission)
 
-		return MissionDetailViewController(viewModel: detailViewModel)
+		return MissionDetailViewController(viewModel: detailViewModel, onNavigationEvent: { [weak self] (event: MissionDetailViewController.NavigationEvent) in
+
+			guard case .confirmPIN = event,
+				let pinInputViewController = self?.createPINInputViewController() else {
+				return
+			}
+
+			self?.navigationController?.pushViewController(pinInputViewController, animated: true)
+
+		})
 	}
+
+	private func createPINInputViewController() -> PINInputViewController? {
+
+		guard let currentAgent = AgentStorage.shared.getStoredAgent() else {
+			return nil
+		}
+
+		let pinViewModel = ReturningAgentPINInputViewModel(agent: currentAgent)
+		return PINInputViewController(viewModel: pinViewModel) { [weak self] (event: PINInputViewController.NavigationEvent) in
+
+			guard case .validInput = event else {
+				return
+			}
+
+			self?.popBackToMissionList()
+		}
+	}
+
+	private func popBackToMissionList() {
+		self.navigationController?.popToRootViewController(animated: true)
+	}
+
 }
