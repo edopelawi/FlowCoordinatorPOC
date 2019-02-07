@@ -11,6 +11,8 @@
 		8D43BD88220B4B59000BA29B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BD87220B4B59000BA29B /* ViewController.swift */; };
 		8D43BD8D220B4B5A000BA29B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D43BD8C220B4B5A000BA29B /* Assets.xcassets */; };
 		8D43BD90220B4B5A000BA29B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D43BD8E220B4B5A000BA29B /* LaunchScreen.storyboard */; };
+		8D43BD9A220BACE1000BA29B /* AgentAuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BD98220BACE1000BA29B /* AgentAuthenticationViewController.swift */; };
+		8D43BD9B220BACE1000BA29B /* AgentAuthenticationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D43BD99220BACE1000BA29B /* AgentAuthenticationViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		8D43BD8C220B4B5A000BA29B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D43BD8F220B4B5A000BA29B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D43BD91220B4B5A000BA29B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D43BD98220BACE1000BA29B /* AgentAuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentAuthenticationViewController.swift; sourceTree = "<group>"; };
+		8D43BD99220BACE1000BA29B /* AgentAuthenticationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgentAuthenticationViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,7 @@
 		8D43BD84220B4B59000BA29B /* FlowCoordinatorPOC */ = {
 			isa = PBXGroup;
 			children = (
+				8D43BD97220BACB3000BA29B /* ViewControllers */,
 				8D43BD85220B4B59000BA29B /* AppDelegate.swift */,
 				8D43BD87220B4B59000BA29B /* ViewController.swift */,
 				8D43BD8C220B4B5A000BA29B /* Assets.xcassets */,
@@ -59,6 +64,15 @@
 				8D43BD91220B4B5A000BA29B /* Info.plist */,
 			);
 			path = FlowCoordinatorPOC;
+			sourceTree = "<group>";
+		};
+		8D43BD97220BACB3000BA29B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8D43BD98220BACE1000BA29B /* AgentAuthenticationViewController.swift */,
+				8D43BD99220BACE1000BA29B /* AgentAuthenticationViewController.xib */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +133,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D43BD9B220BACE1000BA29B /* AgentAuthenticationViewController.xib in Resources */,
 				8D43BD90220B4B5A000BA29B /* LaunchScreen.storyboard in Resources */,
 				8D43BD8D220B4B5A000BA29B /* Assets.xcassets in Resources */,
 			);
@@ -131,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D43BD9A220BACE1000BA29B /* AgentAuthenticationViewController.swift in Sources */,
 				8D43BD88220B4B59000BA29B /* ViewController.swift in Sources */,
 				8D43BD86220B4B59000BA29B /* AppDelegate.swift in Sources */,
 			);
