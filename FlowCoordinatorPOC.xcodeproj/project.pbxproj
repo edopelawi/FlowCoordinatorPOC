@@ -25,6 +25,7 @@
 		8D43BDB8220C0399000BA29B /* MissionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BDB6220C0399000BA29B /* MissionCell.swift */; };
 		8D43BDB9220C0399000BA29B /* MissionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D43BDB7220C0399000BA29B /* MissionCell.xib */; };
 		8D43BDBC220C0918000BA29B /* MissionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BDBB220C0918000BA29B /* MissionListViewModel.swift */; };
+		8D43BDBE220C14E5000BA29B /* MissionDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BDBD220C14E5000BA29B /* MissionDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		8D43BDB6220C0399000BA29B /* MissionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionCell.swift; sourceTree = "<group>"; };
 		8D43BDB7220C0399000BA29B /* MissionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MissionCell.xib; sourceTree = "<group>"; };
 		8D43BDBB220C0918000BA29B /* MissionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionListViewModel.swift; sourceTree = "<group>"; };
+		8D43BDBD220C14E5000BA29B /* MissionDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				8D43BDBB220C0918000BA29B /* MissionListViewModel.swift */,
+				8D43BDBD220C14E5000BA29B /* MissionDetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				8D43BDAD220BFC69000BA29B /* Agent.swift in Sources */,
 				8D43BDB8220C0399000BA29B /* MissionCell.swift in Sources */,
 				8D43BDAB220BFBDC000BA29B /* Mission.swift in Sources */,
+				8D43BDBE220C14E5000BA29B /* MissionDetailViewModel.swift in Sources */,
 				8D43BDBC220C0918000BA29B /* MissionListViewModel.swift in Sources */,
 				8D43BDB1220BFE17000BA29B /* AgentStorage.swift in Sources */,
 				8D43BDA2220BE4F9000BA29B /* MissionListViewController.swift in Sources */,
