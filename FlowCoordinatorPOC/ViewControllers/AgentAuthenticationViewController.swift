@@ -26,7 +26,13 @@ final class AgentAuthenticationViewController: UIViewController {
 
 	@IBAction func authenticateAgent(_ sender: Any) {
 
-		let pinInputViewController = PINInputViewController()
+		guard let agentName = inputTextField.text else {
+			return
+		}
+
+		let viewModel = NewAgentPINInputViewModel(agentName: agentName)
+		let pinInputViewController = PINInputViewController(viewModel: viewModel)
+		
 		self.navigationController?.pushViewController(pinInputViewController, animated: true)
 	}
 }

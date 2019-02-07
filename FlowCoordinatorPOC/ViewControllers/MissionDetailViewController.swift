@@ -41,7 +41,13 @@ final class MissionDetailViewController: UIViewController {
 
 	@IBAction private func executeAction(_ sender: Any) {
 
-		let pinViewController = PINInputViewController()
+		guard let currentAgent = AgentStorage.shared.getStoredAgent() else {
+			return
+		}
+
+		let pinViewModel = ReturningAgentPINInputViewModel(agent: currentAgent)
+		let pinViewController = PINInputViewController(viewModel: pinViewModel)
+		
 		self.navigationController?.pushViewController(pinViewController, animated: true)
 	}
 }

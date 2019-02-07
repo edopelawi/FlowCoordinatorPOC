@@ -40,8 +40,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 		// TODO: Move this to FlowCoordinator later.
 
-		if let _ = AgentStorage.shared.getStoredAgent() {
-			return PINInputViewController()
+		if let currentAgent = AgentStorage.shared.getStoredAgent() {
+
+			let pinViewModel = ReturningAgentPINInputViewModel(agent: currentAgent)
+			return PINInputViewController(viewModel: pinViewModel)
 		} else {
 			return AgentAuthenticationViewController()
 		}
