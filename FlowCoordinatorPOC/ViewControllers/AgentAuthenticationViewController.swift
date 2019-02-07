@@ -19,7 +19,14 @@ final class AgentAuthenticationViewController: UIViewController {
 		navigationItem.largeTitleDisplayMode = .never
 	}
 
+	override func viewDidAppear(_ animated: Bool) {
+		super.viewDidAppear(animated)
+		inputTextField.becomeFirstResponder()
+	}
+
 	@IBAction func authenticateAgent(_ sender: Any) {
-		// TODO: Implement this later.
+
+		let pinInputViewController = PINInputViewController()
+		self.navigationController?.pushViewController(pinInputViewController, animated: true)
 	}
 }
