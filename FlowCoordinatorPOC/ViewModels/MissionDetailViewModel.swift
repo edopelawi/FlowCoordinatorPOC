@@ -10,6 +10,11 @@ import Foundation
 
 struct MissionDetailViewModel {
 
+	enum ActionType: String {
+		case accept = "Accept"
+		case retry = "Retry"
+	}
+
 	private let mission: Mission
 
 	var name: String {
@@ -19,6 +24,18 @@ struct MissionDetailViewModel {
 	var description: String {
 		return mission.description
 	}
+
+	var actionType: ActionType {
+
+		if mission.finished {
+			return .retry
+		} else {
+			return .accept
+		}
+	}
+
+
+
 
 	init(mission: Mission) {
 		self.mission = mission
