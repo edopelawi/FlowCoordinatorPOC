@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8D43BD86220B4B59000BA29B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BD85220B4B59000BA29B /* AppDelegate.swift */; };
-		8D43BD88220B4B59000BA29B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BD87220B4B59000BA29B /* ViewController.swift */; };
 		8D43BD8D220B4B5A000BA29B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D43BD8C220B4B5A000BA29B /* Assets.xcassets */; };
 		8D43BD90220B4B5A000BA29B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D43BD8E220B4B5A000BA29B /* LaunchScreen.storyboard */; };
 		8D43BD9A220BACE1000BA29B /* AgentAuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BD98220BACE1000BA29B /* AgentAuthenticationViewController.swift */; };
@@ -34,7 +33,6 @@
 /* Begin PBXFileReference section */
 		8D43BD82220B4B59000BA29B /* FlowCoordinatorPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowCoordinatorPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D43BD85220B4B59000BA29B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8D43BD87220B4B59000BA29B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8D43BD8C220B4B5A000BA29B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D43BD8F220B4B5A000BA29B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D43BD91220B4B5A000BA29B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,7 +92,6 @@
 				8D43BDB5220C0379000BA29B /* TableViewCells */,
 				8D43BD97220BACB3000BA29B /* ViewControllers */,
 				8D43BD85220B4B59000BA29B /* AppDelegate.swift */,
-				8D43BD87220B4B59000BA29B /* ViewController.swift */,
 				8D43BD8C220B4B5A000BA29B /* Assets.xcassets */,
 				8D43BD8E220B4B5A000BA29B /* LaunchScreen.storyboard */,
 				8D43BD91220B4B5A000BA29B /* Info.plist */,
@@ -242,7 +239,6 @@
 				8D43BD9E220BE132000BA29B /* PINInputViewController.swift in Sources */,
 				8D43BDA6220BE733000BA29B /* MissionDetailViewController.swift in Sources */,
 				8D43BDC4220C1A61000BA29B /* NewAgentPINInputViewModel.swift in Sources */,
-				8D43BD88220B4B59000BA29B /* ViewController.swift in Sources */,
 				8D43BD86220B4B59000BA29B /* AppDelegate.swift in Sources */,
 				8D43BDAD220BFC69000BA29B /* Agent.swift in Sources */,
 				8D43BDB8220C0399000BA29B /* MissionCell.swift in Sources */,
