@@ -26,6 +26,7 @@
 		8D43BDB9220C0399000BA29B /* MissionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D43BDB7220C0399000BA29B /* MissionCell.xib */; };
 		8D43BDBC220C0918000BA29B /* MissionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BDBB220C0918000BA29B /* MissionListViewModel.swift */; };
 		8D43BDBE220C14E5000BA29B /* MissionDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BDBD220C14E5000BA29B /* MissionDetailViewModel.swift */; };
+		8D43BDC1220C1A0D000BA29B /* PINInputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BDC0220C1A0D000BA29B /* PINInputViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		8D43BDB7220C0399000BA29B /* MissionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MissionCell.xib; sourceTree = "<group>"; };
 		8D43BDBB220C0918000BA29B /* MissionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionListViewModel.swift; sourceTree = "<group>"; };
 		8D43BDBD220C14E5000BA29B /* MissionDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionDetailViewModel.swift; sourceTree = "<group>"; };
+		8D43BDC0220C1A0D000BA29B /* PINInputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINInputViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,10 +142,19 @@
 		8D43BDBA220C08FF000BA29B /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				8D43BDBF220C19FE000BA29B /* Protocols */,
 				8D43BDBB220C0918000BA29B /* MissionListViewModel.swift */,
 				8D43BDBD220C14E5000BA29B /* MissionDetailViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8D43BDBF220C19FE000BA29B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8D43BDC0220C1A0D000BA29B /* PINInputViewModel.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +243,7 @@
 				8D43BDBE220C14E5000BA29B /* MissionDetailViewModel.swift in Sources */,
 				8D43BDBC220C0918000BA29B /* MissionListViewModel.swift in Sources */,
 				8D43BDB1220BFE17000BA29B /* AgentStorage.swift in Sources */,
+				8D43BDC1220C1A0D000BA29B /* PINInputViewModel.swift in Sources */,
 				8D43BDA2220BE4F9000BA29B /* MissionListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
