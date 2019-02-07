@@ -15,6 +15,8 @@
 		8D43BD9B220BACE1000BA29B /* AgentAuthenticationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D43BD99220BACE1000BA29B /* AgentAuthenticationViewController.xib */; };
 		8D43BD9E220BE132000BA29B /* PINInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BD9C220BE132000BA29B /* PINInputViewController.swift */; };
 		8D43BD9F220BE132000BA29B /* PINInputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D43BD9D220BE132000BA29B /* PINInputViewController.xib */; };
+		8D43BDA2220BE4F9000BA29B /* MissionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BDA0220BE4F9000BA29B /* MissionListViewController.swift */; };
+		8D43BDA3220BE4F9000BA29B /* MissionListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D43BDA1220BE4F9000BA29B /* MissionListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		8D43BD99220BACE1000BA29B /* AgentAuthenticationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgentAuthenticationViewController.xib; sourceTree = "<group>"; };
 		8D43BD9C220BE132000BA29B /* PINInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINInputViewController.swift; sourceTree = "<group>"; };
 		8D43BD9D220BE132000BA29B /* PINInputViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PINInputViewController.xib; sourceTree = "<group>"; };
+		8D43BDA0220BE4F9000BA29B /* MissionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionListViewController.swift; sourceTree = "<group>"; };
+		8D43BDA1220BE4F9000BA29B /* MissionListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MissionListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 				8D43BD99220BACE1000BA29B /* AgentAuthenticationViewController.xib */,
 				8D43BD9C220BE132000BA29B /* PINInputViewController.swift */,
 				8D43BD9D220BE132000BA29B /* PINInputViewController.xib */,
+				8D43BDA0220BE4F9000BA29B /* MissionListViewController.swift */,
+				8D43BDA1220BE4F9000BA29B /* MissionListViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -141,6 +147,7 @@
 			files = (
 				8D43BD9B220BACE1000BA29B /* AgentAuthenticationViewController.xib in Resources */,
 				8D43BD9F220BE132000BA29B /* PINInputViewController.xib in Resources */,
+				8D43BDA3220BE4F9000BA29B /* MissionListViewController.xib in Resources */,
 				8D43BD90220B4B5A000BA29B /* LaunchScreen.storyboard in Resources */,
 				8D43BD8D220B4B5A000BA29B /* Assets.xcassets in Resources */,
 			);
@@ -157,6 +164,7 @@
 				8D43BD9E220BE132000BA29B /* PINInputViewController.swift in Sources */,
 				8D43BD88220B4B59000BA29B /* ViewController.swift in Sources */,
 				8D43BD86220B4B59000BA29B /* AppDelegate.swift in Sources */,
+				8D43BDA2220BE4F9000BA29B /* MissionListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
