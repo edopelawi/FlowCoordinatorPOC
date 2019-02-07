@@ -24,6 +24,7 @@
 		8D43BDB1220BFE17000BA29B /* AgentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BDB0220BFE17000BA29B /* AgentStorage.swift */; };
 		8D43BDB8220C0399000BA29B /* MissionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BDB6220C0399000BA29B /* MissionCell.swift */; };
 		8D43BDB9220C0399000BA29B /* MissionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D43BDB7220C0399000BA29B /* MissionCell.xib */; };
+		8D43BDBC220C0918000BA29B /* MissionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BDBB220C0918000BA29B /* MissionListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		8D43BDB0220BFE17000BA29B /* AgentStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentStorage.swift; sourceTree = "<group>"; };
 		8D43BDB6220C0399000BA29B /* MissionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionCell.swift; sourceTree = "<group>"; };
 		8D43BDB7220C0399000BA29B /* MissionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MissionCell.xib; sourceTree = "<group>"; };
+		8D43BDBB220C0918000BA29B /* MissionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			children = (
 				8D43BDA9220BFBCA000BA29B /* Entities */,
 				8D43BDAF220BFC91000BA29B /* Storages */,
+				8D43BDBA220C08FF000BA29B /* ViewModels */,
 				8D43BDB5220C0379000BA29B /* TableViewCells */,
 				8D43BD97220BACB3000BA29B /* ViewControllers */,
 				8D43BD85220B4B59000BA29B /* AppDelegate.swift */,
@@ -130,6 +133,14 @@
 				8D43BDB7220C0399000BA29B /* MissionCell.xib */,
 			);
 			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		8D43BDBA220C08FF000BA29B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8D43BDBB220C0918000BA29B /* MissionListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +226,7 @@
 				8D43BDAD220BFC69000BA29B /* Agent.swift in Sources */,
 				8D43BDB8220C0399000BA29B /* MissionCell.swift in Sources */,
 				8D43BDAB220BFBDC000BA29B /* Mission.swift in Sources */,
+				8D43BDBC220C0918000BA29B /* MissionListViewModel.swift in Sources */,
 				8D43BDB1220BFE17000BA29B /* AgentStorage.swift in Sources */,
 				8D43BDA2220BE4F9000BA29B /* MissionListViewController.swift in Sources */,
 			);
