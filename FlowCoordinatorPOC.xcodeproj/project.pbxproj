@@ -20,6 +20,7 @@
 		8D43BDA6220BE733000BA29B /* MissionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BDA4220BE733000BA29B /* MissionDetailViewController.swift */; };
 		8D43BDA7220BE733000BA29B /* MissionDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D43BDA5220BE733000BA29B /* MissionDetailViewController.xib */; };
 		8D43BDAB220BFBDC000BA29B /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BDAA220BFBDC000BA29B /* Mission.swift */; };
+		8D43BDAD220BFC69000BA29B /* Agent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BDAC220BFC69000BA29B /* Agent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		8D43BDA4220BE733000BA29B /* MissionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionDetailViewController.swift; sourceTree = "<group>"; };
 		8D43BDA5220BE733000BA29B /* MissionDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MissionDetailViewController.xib; sourceTree = "<group>"; };
 		8D43BDAA220BFBDC000BA29B /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
+		8D43BDAC220BFC69000BA29B /* Agent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				8D43BDAA220BFBDC000BA29B /* Mission.swift */,
+				8D43BDAC220BFC69000BA29B /* Agent.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				8D43BDA6220BE733000BA29B /* MissionDetailViewController.swift in Sources */,
 				8D43BD88220B4B59000BA29B /* ViewController.swift in Sources */,
 				8D43BD86220B4B59000BA29B /* AppDelegate.swift in Sources */,
+				8D43BDAD220BFC69000BA29B /* Agent.swift in Sources */,
 				8D43BDAB220BFBDC000BA29B /* Mission.swift in Sources */,
 				8D43BDA2220BE4F9000BA29B /* MissionListViewController.swift in Sources */,
 			);
