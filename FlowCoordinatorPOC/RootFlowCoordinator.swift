@@ -30,10 +30,8 @@ final class RootFlowCoordinator {
 
 	private func createInitialViewController() -> UIViewController {
 
-		if let currentAgent = AgentStorage.shared.getStoredAgent() {
-
-			let pinViewModel = ReturningAgentPINInputViewModel(agent: currentAgent)
-			return createPINInputViewController(viewModel: pinViewModel)
+		if let currentAgent = AgentStorage.shared.getStoredAgent() {			
+			return createReturningAgentPINInputViewController(agent: currentAgent)
 		} else {
 			return createAgentAuthenticationViewController()
 		}
@@ -43,20 +41,77 @@ final class RootFlowCoordinator {
 
 		return AgentAuthenticationViewController(onNavigationEvent: { [weak self] (event: AgentAuthenticationViewController.NavigationEvent) in
 
-			guard case .finished(let agentName) = event else {
+			guard let self = self,
+				case .finished(let agentName) = event else {
 				return
 			}
 
-			let pinViewModel = NewAgentPINInputViewModel(agentName: agentName)
-			let pinInputViewController = PINInputViewController(viewModel: pinViewModel)
-
-			self?.navigationController?.pushViewController(pinInputViewController, animated: true)
+			let pinInputViewController = self.createNewAgentPINInputViewController(agentName: agentName)
+			self.navigationController?.pushViewController(pinInputViewController, animated: true)
 		})
 	}
 
-	private func createPINInputViewController(viewModel: PINInputViewModel) -> PINInputViewController {
+	private func createNewAgentPINInputViewController(agentName: String) -> PINInputViewController {
 
-		return PINInputViewController(viewModel: viewModel)
+		let pinViewModel = NewAgentPINInputViewModel(agentName: agentName)
+		return createPINInputViewController(viewModel: pinViewModel) { [weak self] in
+
+			guard let self = self else {
+				return
+			}
+
+			let missionListViewController = self.createMissionListViewController()
+			self.navigationController?.setViewControllers([missionListViewController], animated: true)
+		}
+	}
+
+	private func createReturningAgentPINInputViewController(agent: Agent) -> PINInputViewController {
+
+		let pinViewModel = ReturningAgentPINInputViewModel(agent: agent)
+		return createPINInputViewController(viewModel: pinViewModel) { [weak self] in
+
+			guard let self = self else {
+				return
+			}
+
+			let missionListViewController = self.createMissionListViewController()
+			self.navigationController?.setViewControllers([missionListViewController], animated: true)
+		}
+	}
+
+	private func createPINInputViewController(viewModel: PINInputViewModel, onFinished: @escaping (() -> Void)) -> PINInputViewController {
+
+		return PINInputViewController(viewModel: viewModel, onNavigationEvent: {(event: PINInputViewController.NavigationEvent) in
+
+			guard case .validInput = event else {
+				return
+			}
+
+			onFinished()
+		})
+	}
+
+	private func getShownMissionListViewController() -> MissionListViewController? {
+
+		guard let viewControllerStack = self.navigationController?.viewControllers else {
+			return nil
+		}
+
+		for viewController in viewControllerStack {
+
+			if let missionListViewController = viewController as? MissionListViewController {
+				return missionListViewController
+			}
+		}
+
+		return nil
+	}
+
+
+
+	private func createMissionListViewController() -> MissionListViewController {
+
+		return MissionListViewController()
 	}
 
 }

@@ -10,14 +10,21 @@ import UIKit
 
 final class PINInputViewController: UIViewController {
 
+	enum NavigationEvent {
+		case validInput
+	}
+
+	var onNavigationEvent: ((NavigationEvent) -> Void)?
+
 	@IBOutlet private weak var inputTextField: UITextField!
 
 	private var viewModel: PINInputViewModel?
 
-	convenience init(viewModel: PINInputViewModel) {
+	convenience init(viewModel: PINInputViewModel, onNavigationEvent: ((NavigationEvent) -> Void)? = nil) {
 		self.init()
 
 		self.viewModel = viewModel
+		self.onNavigationEvent = onNavigationEvent
 	}
 
 	override func viewDidLoad() {
@@ -60,38 +67,11 @@ final class PINInputViewController: UIViewController {
 		let validInput = viewModel.validate(pinInput: inputText)
 
 		if validInput {
-			navigateToMissionList()
+			self.onNavigationEvent?(.validInput)			
 		} else {
 			inputTextField.text = ""
 			presentInvalidError()
 		}
-	}
-
-	private func navigateToMissionList() {
-
-		if let shownMissionListViewController = getShownMissionListViewController() {
-			self.navigationController?.popToViewController(shownMissionListViewController, animated: true)
-			return
-		}
-		
-		let missionListViewController = MissionListViewController()
-		self.navigationController?.setViewControllers([missionListViewController], animated: true)
-	}
-
-	private func getShownMissionListViewController() -> MissionListViewController? {
-
-		guard let viewControllerStack = self.navigationController?.viewControllers else {
-			return nil
-		}
-
-		for viewController in viewControllerStack {
-
-			if let missionListViewController = viewController as? MissionListViewController {
-				return missionListViewController
-			}
-		}
-
-		return nil
 	}
 
 	private func presentInvalidError() {
