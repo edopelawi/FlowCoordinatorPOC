@@ -13,10 +13,12 @@ final class RootFlowCoordinator {
 	private var navigationController: UINavigationController? {
 		didSet {
 			authenticationCoordinator.navigationController = navigationController
+			missionCoordinator.navigationController = navigationController
 		}
 	}
 
 	private let authenticationCoordinator = AuthenticationFlowCoordinator()
+	private let missionCoordinator = MissionFlowCoordinator()
 
 	// MARK: - Public methods -
 
@@ -44,8 +46,7 @@ final class RootFlowCoordinator {
 
 		authenticationCoordinator.onNavigationEvent = { [weak self] (event: AuthenticationFlowCoordinator.NavigationEvent) -> Void in
 
-			let missionViewController = MissionListViewController()
-			self?.navigationController?.setViewControllers([missionViewController], animated: true)
+			self?.missionCoordinator.setInitialViewController()
 		}
 	}
 
