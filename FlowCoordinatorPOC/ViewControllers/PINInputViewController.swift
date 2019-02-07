@@ -51,6 +51,7 @@ final class PINInputViewController: UIViewController {
 	private func navigateToMissionList() {
 
 		let missionListViewController = MissionListViewController()
-		self.navigationController?.pushViewController(missionListViewController, animated: true)
+
+		self.navigationController?.setViewControllers([missionListViewController], animated: true)
 	}
 }
