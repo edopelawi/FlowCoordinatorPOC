@@ -93,7 +93,7 @@
 				8D43BDBA220C08FF000BA29B /* ViewModels */,
 				8D43BDB5220C0379000BA29B /* TableViewCells */,
 				8D43BD97220BACB3000BA29B /* ViewControllers */,
-				8D43BDCA220C25A3000BA29B /* RootFlowCoordinator.swift */,
+				8D43BDCC220C31B4000BA29B /* FlowCoordinators */,
 				8D43BD85220B4B59000BA29B /* AppDelegate.swift */,
 				8D43BD8C220B4B5A000BA29B /* Assets.xcassets */,
 				8D43BD8E220B4B5A000BA29B /* LaunchScreen.storyboard */,
@@ -161,6 +161,14 @@
 				8D43BDC0220C1A0D000BA29B /* PINInputViewModel.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8D43BDCC220C31B4000BA29B /* FlowCoordinators */ = {
+			isa = PBXGroup;
+			children = (
+				8D43BDCA220C25A3000BA29B /* RootFlowCoordinator.swift */,
+			);
+			path = FlowCoordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
