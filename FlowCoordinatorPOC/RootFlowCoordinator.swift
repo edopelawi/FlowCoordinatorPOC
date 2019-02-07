@@ -33,10 +33,30 @@ final class RootFlowCoordinator {
 		if let currentAgent = AgentStorage.shared.getStoredAgent() {
 
 			let pinViewModel = ReturningAgentPINInputViewModel(agent: currentAgent)
-			return PINInputViewController(viewModel: pinViewModel)
+			return createPINInputViewController(viewModel: pinViewModel)
 		} else {
-			return AgentAuthenticationViewController()
+			return createAgentAuthenticationViewController()
 		}
+	}
+
+	private func createAgentAuthenticationViewController() -> AgentAuthenticationViewController {
+
+		return AgentAuthenticationViewController(onNavigationEvent: { [weak self] (event: AgentAuthenticationViewController.NavigationEvent) in
+
+			guard case .finished(let agentName) = event else {
+				return
+			}
+
+			let pinViewModel = NewAgentPINInputViewModel(agentName: agentName)
+			let pinInputViewController = PINInputViewController(viewModel: pinViewModel)
+
+			self?.navigationController?.pushViewController(pinInputViewController, animated: true)
+		})
+	}
+
+	private func createPINInputViewController(viewModel: PINInputViewModel) -> PINInputViewController {
+
+		return PINInputViewController(viewModel: viewModel)
 	}
 
 }
