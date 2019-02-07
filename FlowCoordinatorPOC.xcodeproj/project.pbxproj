@@ -9,19 +9,53 @@
 /* Begin PBXBuildFile section */
 		8D43BD86220B4B59000BA29B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BD85220B4B59000BA29B /* AppDelegate.swift */; };
 		8D43BD88220B4B59000BA29B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BD87220B4B59000BA29B /* ViewController.swift */; };
-		8D43BD8B220B4B59000BA29B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D43BD89220B4B59000BA29B /* Main.storyboard */; };
 		8D43BD8D220B4B5A000BA29B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D43BD8C220B4B5A000BA29B /* Assets.xcassets */; };
 		8D43BD90220B4B5A000BA29B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D43BD8E220B4B5A000BA29B /* LaunchScreen.storyboard */; };
+		8D43BD9A220BACE1000BA29B /* AgentAuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BD98220BACE1000BA29B /* AgentAuthenticationViewController.swift */; };
+		8D43BD9B220BACE1000BA29B /* AgentAuthenticationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D43BD99220BACE1000BA29B /* AgentAuthenticationViewController.xib */; };
+		8D43BD9E220BE132000BA29B /* PINInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BD9C220BE132000BA29B /* PINInputViewController.swift */; };
+		8D43BD9F220BE132000BA29B /* PINInputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D43BD9D220BE132000BA29B /* PINInputViewController.xib */; };
+		8D43BDA2220BE4F9000BA29B /* MissionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BDA0220BE4F9000BA29B /* MissionListViewController.swift */; };
+		8D43BDA3220BE4F9000BA29B /* MissionListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D43BDA1220BE4F9000BA29B /* MissionListViewController.xib */; };
+		8D43BDA6220BE733000BA29B /* MissionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BDA4220BE733000BA29B /* MissionDetailViewController.swift */; };
+		8D43BDA7220BE733000BA29B /* MissionDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D43BDA5220BE733000BA29B /* MissionDetailViewController.xib */; };
+		8D43BDAB220BFBDC000BA29B /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BDAA220BFBDC000BA29B /* Mission.swift */; };
+		8D43BDAD220BFC69000BA29B /* Agent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BDAC220BFC69000BA29B /* Agent.swift */; };
+		8D43BDB1220BFE17000BA29B /* AgentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BDB0220BFE17000BA29B /* AgentStorage.swift */; };
+		8D43BDB8220C0399000BA29B /* MissionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BDB6220C0399000BA29B /* MissionCell.swift */; };
+		8D43BDB9220C0399000BA29B /* MissionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D43BDB7220C0399000BA29B /* MissionCell.xib */; };
+		8D43BDBC220C0918000BA29B /* MissionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BDBB220C0918000BA29B /* MissionListViewModel.swift */; };
+		8D43BDBE220C14E5000BA29B /* MissionDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BDBD220C14E5000BA29B /* MissionDetailViewModel.swift */; };
+		8D43BDC1220C1A0D000BA29B /* PINInputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BDC0220C1A0D000BA29B /* PINInputViewModel.swift */; };
+		8D43BDC4220C1A61000BA29B /* NewAgentPINInputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BDC3220C1A61000BA29B /* NewAgentPINInputViewModel.swift */; };
+		8D43BDC6220C1AF6000BA29B /* ReturningAgentPINViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BDC5220C1AF6000BA29B /* ReturningAgentPINViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8D43BD82220B4B59000BA29B /* FlowCoordinatorPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowCoordinatorPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D43BD85220B4B59000BA29B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D43BD87220B4B59000BA29B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8D43BD8A220B4B59000BA29B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D43BD8C220B4B5A000BA29B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D43BD8F220B4B5A000BA29B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D43BD91220B4B5A000BA29B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D43BD98220BACE1000BA29B /* AgentAuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentAuthenticationViewController.swift; sourceTree = "<group>"; };
+		8D43BD99220BACE1000BA29B /* AgentAuthenticationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgentAuthenticationViewController.xib; sourceTree = "<group>"; };
+		8D43BD9C220BE132000BA29B /* PINInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINInputViewController.swift; sourceTree = "<group>"; };
+		8D43BD9D220BE132000BA29B /* PINInputViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PINInputViewController.xib; sourceTree = "<group>"; };
+		8D43BDA0220BE4F9000BA29B /* MissionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionListViewController.swift; sourceTree = "<group>"; };
+		8D43BDA1220BE4F9000BA29B /* MissionListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MissionListViewController.xib; sourceTree = "<group>"; };
+		8D43BDA4220BE733000BA29B /* MissionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionDetailViewController.swift; sourceTree = "<group>"; };
+		8D43BDA5220BE733000BA29B /* MissionDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MissionDetailViewController.xib; sourceTree = "<group>"; };
+		8D43BDAA220BFBDC000BA29B /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
+		8D43BDAC220BFC69000BA29B /* Agent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agent.swift; sourceTree = "<group>"; };
+		8D43BDB0220BFE17000BA29B /* AgentStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentStorage.swift; sourceTree = "<group>"; };
+		8D43BDB6220C0399000BA29B /* MissionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionCell.swift; sourceTree = "<group>"; };
+		8D43BDB7220C0399000BA29B /* MissionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MissionCell.xib; sourceTree = "<group>"; };
+		8D43BDBB220C0918000BA29B /* MissionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionListViewModel.swift; sourceTree = "<group>"; };
+		8D43BDBD220C14E5000BA29B /* MissionDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionDetailViewModel.swift; sourceTree = "<group>"; };
+		8D43BDC0220C1A0D000BA29B /* PINInputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINInputViewModel.swift; sourceTree = "<group>"; };
+		8D43BDC3220C1A61000BA29B /* NewAgentPINInputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAgentPINInputViewModel.swift; sourceTree = "<group>"; };
+		8D43BDC5220C1AF6000BA29B /* ReturningAgentPINViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturningAgentPINViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +88,79 @@
 		8D43BD84220B4B59000BA29B /* FlowCoordinatorPOC */ = {
 			isa = PBXGroup;
 			children = (
+				8D43BDA9220BFBCA000BA29B /* Entities */,
+				8D43BDAF220BFC91000BA29B /* Storages */,
+				8D43BDBA220C08FF000BA29B /* ViewModels */,
+				8D43BDB5220C0379000BA29B /* TableViewCells */,
+				8D43BD97220BACB3000BA29B /* ViewControllers */,
 				8D43BD85220B4B59000BA29B /* AppDelegate.swift */,
 				8D43BD87220B4B59000BA29B /* ViewController.swift */,
-				8D43BD89220B4B59000BA29B /* Main.storyboard */,
 				8D43BD8C220B4B5A000BA29B /* Assets.xcassets */,
 				8D43BD8E220B4B5A000BA29B /* LaunchScreen.storyboard */,
 				8D43BD91220B4B5A000BA29B /* Info.plist */,
 			);
 			path = FlowCoordinatorPOC;
+			sourceTree = "<group>";
+		};
+		8D43BD97220BACB3000BA29B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8D43BD98220BACE1000BA29B /* AgentAuthenticationViewController.swift */,
+				8D43BD99220BACE1000BA29B /* AgentAuthenticationViewController.xib */,
+				8D43BD9C220BE132000BA29B /* PINInputViewController.swift */,
+				8D43BD9D220BE132000BA29B /* PINInputViewController.xib */,
+				8D43BDA0220BE4F9000BA29B /* MissionListViewController.swift */,
+				8D43BDA1220BE4F9000BA29B /* MissionListViewController.xib */,
+				8D43BDA4220BE733000BA29B /* MissionDetailViewController.swift */,
+				8D43BDA5220BE733000BA29B /* MissionDetailViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8D43BDA9220BFBCA000BA29B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				8D43BDAA220BFBDC000BA29B /* Mission.swift */,
+				8D43BDAC220BFC69000BA29B /* Agent.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		8D43BDAF220BFC91000BA29B /* Storages */ = {
+			isa = PBXGroup;
+			children = (
+				8D43BDB0220BFE17000BA29B /* AgentStorage.swift */,
+			);
+			path = Storages;
+			sourceTree = "<group>";
+		};
+		8D43BDB5220C0379000BA29B /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				8D43BDB6220C0399000BA29B /* MissionCell.swift */,
+				8D43BDB7220C0399000BA29B /* MissionCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		8D43BDBA220C08FF000BA29B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8D43BDBF220C19FE000BA29B /* Protocols */,
+				8D43BDBB220C0918000BA29B /* MissionListViewModel.swift */,
+				8D43BDBD220C14E5000BA29B /* MissionDetailViewModel.swift */,
+				8D43BDC3220C1A61000BA29B /* NewAgentPINInputViewModel.swift */,
+				8D43BDC5220C1AF6000BA29B /* ReturningAgentPINViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8D43BDBF220C19FE000BA29B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8D43BDC0220C1A0D000BA29B /* PINInputViewModel.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +221,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D43BDA7220BE733000BA29B /* MissionDetailViewController.xib in Resources */,
+				8D43BD9B220BACE1000BA29B /* AgentAuthenticationViewController.xib in Resources */,
+				8D43BD9F220BE132000BA29B /* PINInputViewController.xib in Resources */,
+				8D43BDA3220BE4F9000BA29B /* MissionListViewController.xib in Resources */,
 				8D43BD90220B4B5A000BA29B /* LaunchScreen.storyboard in Resources */,
 				8D43BD8D220B4B5A000BA29B /* Assets.xcassets in Resources */,
-				8D43BD8B220B4B59000BA29B /* Main.storyboard in Resources */,
+				8D43BDB9220C0399000BA29B /* MissionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +238,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D43BD9A220BACE1000BA29B /* AgentAuthenticationViewController.swift in Sources */,
+				8D43BD9E220BE132000BA29B /* PINInputViewController.swift in Sources */,
+				8D43BDA6220BE733000BA29B /* MissionDetailViewController.swift in Sources */,
+				8D43BDC4220C1A61000BA29B /* NewAgentPINInputViewModel.swift in Sources */,
 				8D43BD88220B4B59000BA29B /* ViewController.swift in Sources */,
 				8D43BD86220B4B59000BA29B /* AppDelegate.swift in Sources */,
+				8D43BDAD220BFC69000BA29B /* Agent.swift in Sources */,
+				8D43BDB8220C0399000BA29B /* MissionCell.swift in Sources */,
+				8D43BDAB220BFBDC000BA29B /* Mission.swift in Sources */,
+				8D43BDBE220C14E5000BA29B /* MissionDetailViewModel.swift in Sources */,
+				8D43BDC6220C1AF6000BA29B /* ReturningAgentPINViewModel.swift in Sources */,
+				8D43BDBC220C0918000BA29B /* MissionListViewModel.swift in Sources */,
+				8D43BDB1220BFE17000BA29B /* AgentStorage.swift in Sources */,
+				8D43BDC1220C1A0D000BA29B /* PINInputViewModel.swift in Sources */,
+				8D43BDA2220BE4F9000BA29B /* MissionListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8D43BD89220B4B59000BA29B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8D43BD8A220B4B59000BA29B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8D43BD8E220B4B5A000BA29B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
