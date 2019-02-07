@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 		let frame = UIScreen.main.bounds
 		window = UIWindow(frame: frame)
-		window?.rootViewController = createInitialViewController()
+		window?.rootViewController = createRootViewController()
 		window?.makeKeyAndVisible()
 
 		return true
@@ -26,15 +26,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	// MARK: - Private methods -
 
-	func createInitialViewController() -> UIViewController {
+	func createRootViewController() -> UIViewController {
 
-		let agentAuthenticationViewController = AgentAuthenticationViewController()
-		let navigationController = UINavigationController(rootViewController: agentAuthenticationViewController)
-
+		let initialViewController = createInitialViewController()
+		let navigationController = UINavigationController(rootViewController: initialViewController)
 
 		navigationController.navigationBar.prefersLargeTitles = true
 
 		return navigationController
 	}
+
+	func createInitialViewController() -> UIViewController {
+
+		// TODO: Move this to FlowCoordinator later.
+
+		if let _ = AgentStorage.shared.getStoredAgent() {
+			return PINInputViewController()
+		} else {
+			return AgentAuthenticationViewController()
+		}
+	}
+	
 }
 
