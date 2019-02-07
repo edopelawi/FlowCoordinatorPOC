@@ -27,9 +27,6 @@ final class MissionDetailViewController: UIViewController {
     }
 
 	// MARK: - Private methods -
-	
-	@IBAction private func executeAction(_ sender: Any) {
-	}
 
 	private func configureView() {
 
@@ -42,4 +39,9 @@ final class MissionDetailViewController: UIViewController {
 		self.actionButton.setTitle(viewModel.actionType.rawValue, for: .normal)
 	}
 
+	@IBAction private func executeAction(_ sender: Any) {
+
+		let pinViewController = PINInputViewController()
+		self.navigationController?.pushViewController(pinViewController, animated: true)
+	}
 }
