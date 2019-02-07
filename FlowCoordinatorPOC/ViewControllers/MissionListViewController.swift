@@ -67,4 +67,16 @@ extension MissionListViewController: UITableViewDataSource {
 
 extension MissionListViewController: UITableViewDelegate {
 
+	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+		guard indexPath.row < viewModel.missions.count else {
+			return
+		}
+
+		let mission = viewModel.missions[indexPath.row]
+		let detailViewModel = MissionDetailViewModel(mission: mission)
+
+		let detailViewController = MissionDetailViewController(viewModel: detailViewModel)
+		self.navigationController?.pushViewController(detailViewController, animated: true)
+	}
 }
