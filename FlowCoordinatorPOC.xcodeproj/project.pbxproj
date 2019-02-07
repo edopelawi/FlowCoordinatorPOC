@@ -27,6 +27,7 @@
 		8D43BDBC220C0918000BA29B /* MissionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BDBB220C0918000BA29B /* MissionListViewModel.swift */; };
 		8D43BDBE220C14E5000BA29B /* MissionDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BDBD220C14E5000BA29B /* MissionDetailViewModel.swift */; };
 		8D43BDC1220C1A0D000BA29B /* PINInputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BDC0220C1A0D000BA29B /* PINInputViewModel.swift */; };
+		8D43BDC4220C1A61000BA29B /* NewAgentPINInputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BDC3220C1A61000BA29B /* NewAgentPINInputViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		8D43BDBB220C0918000BA29B /* MissionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionListViewModel.swift; sourceTree = "<group>"; };
 		8D43BDBD220C14E5000BA29B /* MissionDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionDetailViewModel.swift; sourceTree = "<group>"; };
 		8D43BDC0220C1A0D000BA29B /* PINInputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINInputViewModel.swift; sourceTree = "<group>"; };
+		8D43BDC3220C1A61000BA29B /* NewAgentPINInputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAgentPINInputViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 				8D43BDBF220C19FE000BA29B /* Protocols */,
 				8D43BDBB220C0918000BA29B /* MissionListViewModel.swift */,
 				8D43BDBD220C14E5000BA29B /* MissionDetailViewModel.swift */,
+				8D43BDC3220C1A61000BA29B /* NewAgentPINInputViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				8D43BD9A220BACE1000BA29B /* AgentAuthenticationViewController.swift in Sources */,
 				8D43BD9E220BE132000BA29B /* PINInputViewController.swift in Sources */,
 				8D43BDA6220BE733000BA29B /* MissionDetailViewController.swift in Sources */,
+				8D43BDC4220C1A61000BA29B /* NewAgentPINInputViewModel.swift in Sources */,
 				8D43BD88220B4B59000BA29B /* ViewController.swift in Sources */,
 				8D43BD86220B4B59000BA29B /* AppDelegate.swift in Sources */,
 				8D43BDAD220BFC69000BA29B /* Agent.swift in Sources */,
