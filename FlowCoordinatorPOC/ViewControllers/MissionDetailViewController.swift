@@ -23,11 +23,23 @@ final class MissionDetailViewController: UIViewController {
 	override func viewDidLoad() {
         super.viewDidLoad()
 
-		self.title = self.viewModel?.name
-		self.descriptionTextView.text = self.viewModel?.description
+		configureView()
     }
+
+	// MARK: - Private methods -
 	
-	@IBAction func executeAction(_ sender: Any) {
+	@IBAction private func executeAction(_ sender: Any) {
+	}
+
+	private func configureView() {
+
+		guard let viewModel = self.viewModel else {
+			return
+		}
+
+		self.title = viewModel.name
+		self.descriptionTextView.text = viewModel.description
+		self.actionButton.setTitle(viewModel.actionType.rawValue, for: .normal)
 	}
 
 }
