@@ -18,10 +18,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 		let frame = UIScreen.main.bounds
 		window = UIWindow(frame: frame)
-		window?.rootViewController = UIViewController()
+		window?.rootViewController = createInitialViewController()
 		window?.makeKeyAndVisible()
 
 		return true
+	}
+
+	// MARK: - Private methods -
+
+	func createInitialViewController() -> UIViewController {
+
+		let agentAuthenticationViewController = AgentAuthenticationViewController()
+		let navigationController = UINavigationController(rootViewController: agentAuthenticationViewController)
+
+
+		navigationController.navigationBar.prefersLargeTitles = true
+
+		return navigationController
 	}
 }
 
