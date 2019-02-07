@@ -12,6 +12,14 @@ final class PINInputViewController: UIViewController {
 
 	@IBOutlet private weak var inputTextField: UITextField!
 
+	private var viewModel: PINInputViewModel?
+
+	convenience init(viewModel: PINInputViewModel) {
+		self.init()
+
+		self.viewModel = viewModel
+	}
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
@@ -38,14 +46,24 @@ final class PINInputViewController: UIViewController {
 	
 	@objc private func inputChanged(_ sender: Any) {
 
+		guard let viewModel = viewModel else {
+			return
+		}
+
 		let currentText = inputTextField.text
 
-		guard let validText = currentText,
-			validText.count >= 4 else {
+		guard let inputText = currentText,
+			inputText.count >= 4 else {
 				return
 		}
 
-		navigateToMissionList()
+		let validInput = viewModel.validate(pinInput: inputText)
+
+		if validInput {
+			navigateToMissionList()
+		} else {
+			presentInvalidError()
+		}
 	}
 
 	private func navigateToMissionList() {
@@ -73,5 +91,18 @@ final class PINInputViewController: UIViewController {
 		}
 
 		return nil
+	}
+
+	private func presentInvalidError() {
+
+		let alertController = UIAlertController(title: "Error", message: "Invalid input.", preferredStyle: .alert)
+
+		let alertAction = UIAlertAction(title: "OK", style: .default, handler: { [weak self] _ -> Void in
+			self?.dismiss(animated: true, completion: nil)
+		})
+
+		alertController.addAction(alertAction)
+
+		self.present(alertController, animated: true, completion: nil)
 	}
 }
