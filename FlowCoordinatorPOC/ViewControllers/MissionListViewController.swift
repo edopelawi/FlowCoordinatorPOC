@@ -17,13 +17,17 @@ final class MissionListViewController: UIViewController {
         super.viewDidLoad()
 
 		title = "Missions"
-
-		navigationController?.isNavigationBarHidden = false
-		navigationItem.largeTitleDisplayMode = .always
 		
 		configureTableView()
     }
 
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+
+		navigationController?.isNavigationBarHidden = false
+		navigationItem.largeTitleDisplayMode = .always
+	}
+	
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
 		tableView.reloadData()
