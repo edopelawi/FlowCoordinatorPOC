@@ -30,6 +30,7 @@
 		8D43BDC6220C1AF6000BA29B /* ReturningAgentPINViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BDC5220C1AF6000BA29B /* ReturningAgentPINViewModel.swift */; };
 		8D43BDCB220C25A3000BA29B /* RootFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BDCA220C25A3000BA29B /* RootFlowCoordinator.swift */; };
 		8D43BDCE220C31F4000BA29B /* AuthenticationFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BDCD220C31F4000BA29B /* AuthenticationFlowCoordinator.swift */; };
+		8D43BDD0220C33F2000BA29B /* MissionFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BDCF220C33F2000BA29B /* MissionFlowCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		8D43BDC5220C1AF6000BA29B /* ReturningAgentPINViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturningAgentPINViewModel.swift; sourceTree = "<group>"; };
 		8D43BDCA220C25A3000BA29B /* RootFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootFlowCoordinator.swift; sourceTree = "<group>"; };
 		8D43BDCD220C31F4000BA29B /* AuthenticationFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFlowCoordinator.swift; sourceTree = "<group>"; };
+		8D43BDCF220C33F2000BA29B /* MissionFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionFlowCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 			children = (
 				8D43BDCA220C25A3000BA29B /* RootFlowCoordinator.swift */,
 				8D43BDCD220C31F4000BA29B /* AuthenticationFlowCoordinator.swift */,
+				8D43BDCF220C33F2000BA29B /* MissionFlowCoordinator.swift */,
 			);
 			path = FlowCoordinators;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				8D43BDB1220BFE17000BA29B /* AgentStorage.swift in Sources */,
 				8D43BDC1220C1A0D000BA29B /* PINInputViewModel.swift in Sources */,
 				8D43BDA2220BE4F9000BA29B /* MissionListViewController.swift in Sources */,
+				8D43BDD0220C33F2000BA29B /* MissionFlowCoordinator.swift in Sources */,
 				8D43BDCB220C25A3000BA29B /* RootFlowCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
