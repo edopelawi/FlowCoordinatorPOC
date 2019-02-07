@@ -62,6 +62,7 @@ final class PINInputViewController: UIViewController {
 		if validInput {
 			navigateToMissionList()
 		} else {
+			inputTextField.text = ""
 			presentInvalidError()
 		}
 	}
@@ -97,8 +98,11 @@ final class PINInputViewController: UIViewController {
 
 		let alertController = UIAlertController(title: "Error", message: "Invalid input.", preferredStyle: .alert)
 
-		let alertAction = UIAlertAction(title: "OK", style: .default, handler: { [weak self] _ -> Void in
-			self?.dismiss(animated: true, completion: nil)
+		let alertAction = UIAlertAction(
+			title: "OK",
+			style: .default,
+			handler: { [weak self] _ -> Void in
+				self?.dismiss(animated: true, completion: nil)
 		})
 
 		alertController.addAction(alertAction)
