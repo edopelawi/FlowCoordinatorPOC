@@ -10,14 +10,22 @@ import UIKit
 
 final class MissionDetailViewController: UIViewController {
 
+	enum NavigationEvent {
+		case confirmPIN
+	}
+
+	var onNavigationEvent: ((NavigationEvent) -> Void)?
+
 	@IBOutlet weak var descriptionTextView: UITextView!
 	@IBOutlet weak var actionButton: UIButton!
 
 	private var viewModel: MissionDetailViewModel?
 
-	convenience init(viewModel: MissionDetailViewModel) {
+	convenience init(viewModel: MissionDetailViewModel, onNavigationEvent: @escaping ((NavigationEvent) -> Void)) {
 		self.init()
+
 		self.viewModel = viewModel
+		self.onNavigationEvent = onNavigationEvent
 	}
 
 	override func viewDidLoad() {
@@ -40,14 +48,6 @@ final class MissionDetailViewController: UIViewController {
 	}
 
 	@IBAction private func executeAction(_ sender: Any) {
-
-		guard let currentAgent = AgentStorage.shared.getStoredAgent() else {
-			return
-		}
-
-		let pinViewModel = ReturningAgentPINInputViewModel(agent: currentAgent)
-		let pinViewController = PINInputViewController(viewModel: pinViewModel)
-		
-		self.navigationController?.pushViewController(pinViewController, animated: true)
+		onNavigationEvent?(.confirmPIN)
 	}
 }

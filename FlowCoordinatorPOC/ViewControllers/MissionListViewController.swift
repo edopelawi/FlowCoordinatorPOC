@@ -10,8 +10,19 @@ import UIKit
 
 final class MissionListViewController: UIViewController {
 
+	enum NavigationEvent {
+		case toDetail(mission: Mission)
+	}
+
+	var onNavigationEvent: ((NavigationEvent) -> Void)?
+
 	@IBOutlet private weak var tableView: UITableView!
 	private let viewModel = MissionListViewModel()
+
+	convenience init(onNavigationEvent: @escaping ((NavigationEvent) -> Void)) {
+		self.init()
+		self.onNavigationEvent = onNavigationEvent
+	}
 
 	override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,9 +89,6 @@ extension MissionListViewController: UITableViewDelegate {
 		}
 
 		let mission = viewModel.missions[indexPath.row]
-		let detailViewModel = MissionDetailViewModel(mission: mission)
-
-		let detailViewController = MissionDetailViewController(viewModel: detailViewModel)
-		self.navigationController?.pushViewController(detailViewController, animated: true)
+		self.onNavigationEvent?(.toDetail(mission: mission))		
 	}
 }

@@ -10,8 +10,19 @@ import UIKit
 
 final class AgentAuthenticationViewController: UIViewController {
 
-	@IBOutlet weak var inputTextField: UITextField!
+	enum NavigationEvent {
+		case finished(agentName: String)
+	}
 
+	var onNavigationEvent: ((NavigationEvent) -> Void)?
+
+	@IBOutlet private weak var inputTextField: UITextField!
+
+
+	convenience init(onNavigationEvent: @escaping ((NavigationEvent) -> Void)) {
+		self.init()
+		self.onNavigationEvent = onNavigationEvent
+	}
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
 
@@ -30,9 +41,6 @@ final class AgentAuthenticationViewController: UIViewController {
 			return
 		}
 
-		let viewModel = NewAgentPINInputViewModel(agentName: agentName)
-		let pinInputViewController = PINInputViewController(viewModel: viewModel)
-		
-		self.navigationController?.pushViewController(pinInputViewController, animated: true)
+		self.onNavigationEvent?(.finished(agentName: agentName))
 	}
 }
