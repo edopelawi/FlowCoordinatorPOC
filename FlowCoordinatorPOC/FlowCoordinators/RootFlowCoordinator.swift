@@ -50,19 +50,5 @@ final class RootFlowCoordinator {
 		}
 	}
 
-	private func getShownMissionListViewController() -> MissionListViewController? {
-
-		guard let viewControllerStack = self.navigationController?.viewControllers else {
-			return nil
-		}
-
-		for viewController in viewControllerStack {
-
-			if let missionListViewController = viewController as? MissionListViewController {
-				return missionListViewController
-			}
-		}
-
-		return nil
-	}
+	
 }
