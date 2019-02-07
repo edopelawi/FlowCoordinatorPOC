@@ -17,6 +17,8 @@
 		8D43BD9F220BE132000BA29B /* PINInputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D43BD9D220BE132000BA29B /* PINInputViewController.xib */; };
 		8D43BDA2220BE4F9000BA29B /* MissionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BDA0220BE4F9000BA29B /* MissionListViewController.swift */; };
 		8D43BDA3220BE4F9000BA29B /* MissionListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D43BDA1220BE4F9000BA29B /* MissionListViewController.xib */; };
+		8D43BDA6220BE733000BA29B /* MissionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43BDA4220BE733000BA29B /* MissionDetailViewController.swift */; };
+		8D43BDA7220BE733000BA29B /* MissionDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D43BDA5220BE733000BA29B /* MissionDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		8D43BD9D220BE132000BA29B /* PINInputViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PINInputViewController.xib; sourceTree = "<group>"; };
 		8D43BDA0220BE4F9000BA29B /* MissionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionListViewController.swift; sourceTree = "<group>"; };
 		8D43BDA1220BE4F9000BA29B /* MissionListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MissionListViewController.xib; sourceTree = "<group>"; };
+		8D43BDA4220BE733000BA29B /* MissionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionDetailViewController.swift; sourceTree = "<group>"; };
+		8D43BDA5220BE733000BA29B /* MissionDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MissionDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				8D43BD9D220BE132000BA29B /* PINInputViewController.xib */,
 				8D43BDA0220BE4F9000BA29B /* MissionListViewController.swift */,
 				8D43BDA1220BE4F9000BA29B /* MissionListViewController.xib */,
+				8D43BDA4220BE733000BA29B /* MissionDetailViewController.swift */,
+				8D43BDA5220BE733000BA29B /* MissionDetailViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -145,6 +151,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D43BDA7220BE733000BA29B /* MissionDetailViewController.xib in Resources */,
 				8D43BD9B220BACE1000BA29B /* AgentAuthenticationViewController.xib in Resources */,
 				8D43BD9F220BE132000BA29B /* PINInputViewController.xib in Resources */,
 				8D43BDA3220BE4F9000BA29B /* MissionListViewController.xib in Resources */,
@@ -162,6 +169,7 @@
 			files = (
 				8D43BD9A220BACE1000BA29B /* AgentAuthenticationViewController.swift in Sources */,
 				8D43BD9E220BE132000BA29B /* PINInputViewController.swift in Sources */,
+				8D43BDA6220BE733000BA29B /* MissionDetailViewController.swift in Sources */,
 				8D43BD88220B4B59000BA29B /* ViewController.swift in Sources */,
 				8D43BD86220B4B59000BA29B /* AppDelegate.swift in Sources */,
 				8D43BDA2220BE4F9000BA29B /* MissionListViewController.swift in Sources */,
